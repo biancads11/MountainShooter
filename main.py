@@ -1,13 +1,5 @@
-import pygame
+from code.game import Game
 
-print()
-pygame.init()
-window = pygame.display.set_mode(size=(600, 480)) #abre a janela e seta o tamanho
+game = Game()
+game.run()
 
-while True:
-    #check for all events
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            print('Quitting...')
-            pygame.quit() #clase window
-            quit() #end pygame
